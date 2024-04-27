@@ -1,0 +1,19 @@
+{#{% load static %}#}
+{##}
+{#<img src="{% static 'image1.svg' %}" alt="sdfgh" id="img" onclick="change()"/>#}
+{##}
+{#<script>#}
+{#    function change() {#}
+{#        var image = document.getElementById('img');#}
+{#        if (image.src===("{% static 'image2.svg' %}"))#}
+{#        {#}
+{#            image.src = "{% static 'image1.svg' %}";#}
+{#            localStorage.setItem("status","true")#}
+{#        }#}
+{#        else {#}
+{#            image.src = "{% static 'image2.svg' %}";#}
+{#        }#}
+{#    }#}
+{#</script>#}
+
+

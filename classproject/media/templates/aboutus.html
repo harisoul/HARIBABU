@@ -1,0 +1,295 @@
+{#{% extends 'home.html' %}#}
+{#{% block title %} myyyy{% endblock %}#}
+{#{% block css %}#}
+{#    body, h1, p,h2 {#}
+{#            margin: 0;#}
+{#            padding: 0;#}
+{#            font-family: "Arial Rounded MT Bold";#}
+{#        }#}
+{##}
+{#        /* Set font family and background color for the entire page */#}
+{#        body {#}
+{#            background-image: url("http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");#}
+{#              background-repeat: no-repeat;#}
+{#              background-size: cover;#}
+{##}
+{#        }#}
+{##}
+{#        /* Styling for the About section */#}
+{#        .about-section {#}
+{#            padding: 20px;#}
+{#            text-align: center;#}
+{#            background-color: #474e5d;#}
+{#            color: white;#}
+{#        }#}
+{##}
+{#        /* Styling for team member cards */#}
+{#        .card {#}
+{#            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);#}
+{#            margin: 8px;#}
+{#            padding: 0;#}
+{#        }#}
+{##}
+{#        /* Center align team member names */#}
+{#        .title {#}
+{#            color: grey;#}
+{#        }#}
+{##}
+{#        /* Button styling */#}
+{#        .button {#}
+{#            border: none;#}
+{#            outline: 0;#}
+{#            display: inline-block;#}
+{#            padding: 8px;#}
+{#            color: white;#}
+{#            background-color: #000;#}
+{#            text-align: center;#}
+{#            cursor: pointer;#}
+{#            width: 100%;#}
+{#        }#}
+{##}
+{#        /* Hover effect for buttons */#}
+{#        .button:hover {#}
+{#            background-color: #555;#}
+{#        }#}
+{##}
+{#        /* Responsive layout for smaller screens */#}
+{#        @media screen and (max-width: 650px) {#}
+{#            .column {#}
+{#                width: 100%;#}
+{#                display: block;#}
+{#            }#}
+{#        }#}
+{#       img{#}
+{#               width: 25px;#}
+{#              border: 8px solid darkseagreen;#}
+{#              padding: 10px;#}
+{#              margin: 10px;#}
+{#              border-radius: 200px;#}
+{#       }#}
+{#       .si{#}
+{#           padding-right: 750px;#}
+{#       }#}
+{#       .card{#}
+{#            width: 1000px;#}
+{#              border: 15px solid darkseagreen;#}
+{#              padding: 40px;#}
+{#              margin: 10px;#}
+{#              border-radius: 100px;#}
+{#       }#}
+{##}
+{#{% endblock %}#}
+{##}
+{#{% block body %}#}
+{#    {% load static %}#}
+{#    <div >#}
+{#    <div class="about-section">#}
+{#        <h1>About Us </h1>#}
+{#        <p>Some text about who we are and what we do.</p>#}
+{#        <p>Resize the browser window to see that this page is responsive.</p>#}
+{#    </div>#}
+{##}
+{#    <h2 style="text-align:center">Our Team</h2>#}
+{##}
+{#    <div class="row">#}
+{#        <div class="column">#}
+{#            <div class="card">#}
+{#                <div class="si">#}
+{#                <img src="{% static 'haripro.jpg' %}" alt="hari" style="width:100%" width="20" height="200">#}
+{#                </div>#}
+{#                <div class="container">#}
+{#                    <h2>Sailada Hari Babu</h2>#}
+{#                    <p class="title">CEO & Founder</p>#}
+{#                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>#}
+{#                    <p>hari13112004@gmailcom</p><br>#}
+{#                    <p><button class="button">Contact</button></p>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="card">#}
+{#                <div class="si">#}
+{#                <img src="{% static 'viswapro.jpg' %}" alt="Jane" style="width:100%" width="20" height="200">#}
+{#                </div>#}
+{#                <div class="container">#}
+{#                    <h2>Patnana Viswanadh</h2>#}
+{#                    <p class="title">Co-Founder</p>#}
+{#                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>#}
+{#                    <p>jane@example.com</p><br>#}
+{#                    <p><button class="button">Contact</button></p>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="card">#}
+{#                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">#}
+{#                <div class="container">#}
+{#                    <h2>Palacharla Sathwick</h2>#}
+{#                    <p class="title">Co-Founder</p>#}
+{#                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>#}
+{#                    <p>jane@example.com</p><br>#}
+{#                    <p><button class="button">Contact</button></p>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <!-- Repeat similar card structure for other team members -->#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#{% endblock %}#}
+
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        {% block css %} {% endblock %}
+
+        /* Reset default margin and padding */
+        body, h1, p,h2 {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        /* Set font family and background color for the entire page */
+        body {
+            {#background-image: url("http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");#}
+            {#  background-repeat: no-repeat;#}
+            {#  background-size: cover;#}
+            background-color: white;
+
+        }
+
+        /* Styling for the About section */
+        .about-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+        }
+
+        /* Styling for team member cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            padding: 0;
+        }
+
+        /* Center align team member names */
+        .title {
+            color: grey;
+        }
+
+        /* Button styling */
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Hover effect for buttons */
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+       img{
+               width: 25px;
+              border: 8px solid #343a40;
+              padding: 10px;
+              margin: 10px;
+              border-radius: 200px;
+       }
+       .si{
+           padding-right: 750px;
+       }
+       .card{
+            width: 1000px;
+              border: 15px solid #343a40;
+              padding: 40px;
+              margin: 10px;
+              border-radius: 100px;
+       }
+    </style>
+</head>
+<body >
+{#    {% block body %}{% endblock %}#}
+
+<div >
+    <div class="about-section">
+        <h1>About Us </h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="si">
+                <img src="{% static 'haripro.jpg' %}" alt="hari" style="width:100%" width="20" height="200">
+                </div>
+                <div class="container">
+                    <h2>Sailada Hari Babu</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>hari13112004@gmailcom</p><br>
+                    <p><button class="button">Contact</button></p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="si">
+                <img src="{% static 'viswapro.jpg' %}" alt="Jane" style="width:100%" width="20" height="200">
+                </div>
+                <div class="container">
+                    <h2>Patnana Viswanadh</h2>
+                    <p class="title">Co-Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>jane@example.com</p><br>
+                    <p><button class="button">Contact</button></p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Palacharla Sathwick</h2>
+                    <p class="title">Co-Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>jane@example.com</p><br>
+                    <p><button class="button">Contact</button></p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat similar card structure for other team members -->
+    </div>
+</div>
+</body>
+</html>

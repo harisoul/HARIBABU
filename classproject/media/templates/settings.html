@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings Page</title>
+{#<link rel="stylesheet" href="styles.css">#}
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.settings-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.setting {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+input[type="text"],
+select {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+body {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+
+
+        </style>
+
+</head>
+<body>
+
+<div class="settings-container">
+  <h1>Settings</h1>
+
+  <div class="settings-section">
+    <h2>General Settings</h2>
+    <div class="setting">
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <!-- Add more language options here -->
+      </select>
+    </div>
+    <!-- Add more general settings here -->
+  </div>
+
+  <div class="settings-section">
+    <h2>Account Settings</h2>
+    <div class="setting">
+      <label for="username">Username:</label>
+      <input type="text" id="username">
+    </div>
+       <div class="settings-section">
+    <h2>Change theme</h2>
+    <div class="setting">
+      <label for="language">colour:</label>
+      <select id="language">
+        <option value="english">dark</option>
+        <option value="spanish">white</option>
+        <!-- Add more language options here -->
+      </select>
+    </div>
+    <!-- Add more account settings here -->
+  </div>
+
+  <!-- Add more sections for other settings categories -->
+
+</div>
+
+<script src="script.js">
+    function toggleTheme() {
+  const themeStyle = document.getElementById('theme-style');
+
+  // Check current theme and toggle
+  if (themeStyle.getAttribute('href') === 'light-theme.css') {
+    themeStyle.setAttribute('href', 'dark-theme.css');
+  } else {
+    themeStyle.setAttribute('href', 'light-theme.css');
+  }
+}
+
+</script>
+</body>
+</html>
